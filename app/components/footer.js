@@ -5,7 +5,8 @@ import IconFooter from "./icon_footer";
 export default function Footer() {
     return (
         <footer className="flex flex-col justify-center items-center py-4 border-t">
-            <h1 className="text-xl md:text-4xl font-bold pb-2 md:pb-4">{Content.PROJECT_TITLE}</h1>
+            <h1 className="text-xl md:text-4xl font-bold ">{Content.PROJECT_TITLE}</h1>
+            <p className="text-sm text-neutral-400 dark:text-neutral-600 pb-2">{Content.MEANS_NAME}</p>
             <p className="text-center text-md md:text-xl italic pb-2 md:pb-4 max-w-xs md:max-w-md mx-auto px-2 md:px-0 text-gradient">
                 {Content.FOOTER_QUOTE}
             </p>

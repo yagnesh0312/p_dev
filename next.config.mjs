@@ -1,11 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['github.com', "prexakanabar.github.io", "img.icons8.com"],
+        domains: ['github.com', "raw.githubusercontent.com", "img.icons8.com"],
+        unoptimized: true,
     },
     output: 'export',
-    basePath: '/p_dev', // Replace with your repository name
-    assetPrefix: '/p_dev/',
+    reactStrictMode: true,
+    swcMinify: true,
+
 };
 
 export default nextConfig;

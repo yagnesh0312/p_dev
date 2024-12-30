@@ -29,7 +29,12 @@ function Projects() {
                         {Content.PROJECT_HEADER_SUBTITLE}
                     </p>    
                 </div>
-                <Timeline data={data} />
+                {/* <Timeline data={data} /> */}
+                {projects.map((project, index) => (
+                    <div key={project.name}>
+                        <ProjectTile id={index} />
+                    </div>
+                ))}
             </div>
 
         </>
