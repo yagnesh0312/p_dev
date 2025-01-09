@@ -60,7 +60,7 @@ export const TypewriterEffect = ({
         className
       )}>
       {renderWords()}
-      <motion.span
+      <motion.div
         initial={{
           opacity: 0,
         }}
@@ -73,9 +73,9 @@ export const TypewriterEffect = ({
           repeatType: "reverse",
         }}
         className={cn(
-          "inline-block rounded-sm w-[4px] h-8 md:h-16 lg:h-18 mx-2 bg-green-500",
+          "inline-block rounded-full w-2 h-2 md:w-3 md:h-3 lg:w-4 lg:h-4 mx-2 bg-blue-500",
           cursorClassName
-        )}></motion.span>
+        )}></motion.div>
     </div>)
   );
 };
@@ -145,12 +145,11 @@ export const TypewriterEffectSmooth = ({
         }}
         transition={{
           duration: 0.8,
-
           repeat: Infinity,
           repeatType: "reverse",
         }}
         className={cn(
-          "inline-block rounded-full w-[4px] h-8 md:h-16 lg:h-20 mx-2 bg-green-500",
+          "inline-block bg-gradient-to-r from-green-300 via-green-500 to-green-700 w-[30px] h-8 md:h-16 lg:h-20 mx-1",
           cursorClassName
         )}></motion.span>
     </div>)

@@ -31,10 +31,13 @@ function Contact() {
                 className="-top-40 left-0 md:left-60 md:-top-20"
                 fill="#c6ffc6"
             />
-            <h1 className={MyCSS.heading}>{Content.CONTACT_TITLE}</h1>
-            <p className={MyCSS.subHeading}>
-                {Content.CONTACT_SUBTITLE}
-            </p>
+            <div className=''>
+
+                <h1 className={MyCSS.heading}>{Content.CONTACT_TITLE}</h1>
+                <p className={MyCSS.subHeading}>
+                    {Content.CONTACT_SUBTITLE}
+                </p>
+            </div>
             <div className="connect-main grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1100px] mx-auto pt-12">
                 <div>
                     <form
@@ -46,12 +49,13 @@ function Contact() {
                     from-neutral-900 to-neutral-700 bg-opacity-50 
                     dark:from-neutral-100 dark:to-neutral-500 dark:bg-opacity-50
                     animate-gradient-x">{Content.FORM_HEADING}</h1>
-                        <p className="sub-heading text-start mb-4 text-lg font-light">{Content.FORM_SUBHEADING}</p>
+                        <p className={MyCSS.subHeading.replace("text-center", "") + " mb-4"}>{Content.FORM_SUBHEADING}</p>
                         <div className="input-item mb-4">
                             <input
                                 className="input w-full text-lg p-2 dark:bg-black dark:text-white border-2 border-[rgba(131, 242, 116, 0.3)] rounded focus:outline-none focus:ring"
                                 type="email"
                                 name="email"
+                                required
                                 placeholder="Enter your email"
                             />
                         </div>
@@ -60,6 +64,8 @@ function Contact() {
                                 className="input w-full text-lg p-2 dark:bg-black dark:text-white border-2 border-[rgba(131, 242, 116, 0.3)] rounded focus:outline-none focus:ring"
                                 name="message"
                                 rows="5"
+                                required
+
                                 placeholder="Enter your message"
                             ></textarea>
                         </div>

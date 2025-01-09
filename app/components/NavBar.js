@@ -6,7 +6,9 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import '../globalicons.css';
 import content from "../data/content";
+import { JetBrains_Mono } from "next/font/google";
 import Image from "next/image";
+import {FontStyle} from "../data/fontStyle";
 
 export function NavbarDemo() {
     return (
@@ -53,9 +55,8 @@ function Navbar({
         <div className={cn("fixed  flex items-center px-4 mx-auto z-[50] w-full justify-between", className)}>
             {/* Logo Section */}
             <HoveredLink href="/" onClick={() => setActive(content.NAVBAR_HOME)} className={hover_list_effect}>
-                <div className="flex text-xl flex-row space-x-8 justify-center text-black md:px-6 px-2 dark:text-white      md:py-4 py-2    font-bold  text-gradient">
+                <div className={`flex text-xl flex-row space-x-8 justify-center text-black md:px-6 px-2 dark:text-white  ${FontStyle.jetbrains}  md:py-4 py-2    font-bold  text-gradient  bg-black/20 backdrop-blur-md shadow-black/50 rounded-full`}>
                     {content.PROJECT_TITLE}
-
                 </div>
             </HoveredLink>
 
@@ -69,14 +70,14 @@ function Navbar({
                     />
                 </div>
                 <div className="flex flex-row space-x-8 items-center justify-center   text-black dark:text-white   px-4 py-4   ">
-                    {/* <HoveredLink href="/" onClick={() => { setActive(content.NAVBAR_HOME); setIsMenuOpen(false) }} className={hover_list_effect}>
-                        <div className={active === content.NAVBAR_HOME ? "text-highlight text-gradient underline" : ""}>{content.NAVBAR_HOME}</div>
-                    </HoveredLink> */}
                     <HoveredLink href="/About" onClick={() => { setActive(content.NAVBAR_ABOUT); setIsMenuOpen(false) }} className={hover_list_effect}>
                         <div className={active === content.NAVBAR_ABOUT ? "text-highlight text-gradient underline" : ""}>{content.NAVBAR_ABOUT}</div>
                     </HoveredLink>
                     <HoveredLink href="/Education" onClick={() => { setActive(content.NAVBAR_EDUCATION); setIsMenuOpen(false) }} className={hover_list_effect}>
                         <div className={active === content.NAVBAR_EDUCATION ? "text-highlight text-gradient underline" : ""}>{content.NAVBAR_EDUCATION}</div>
+                    </HoveredLink>
+                    <HoveredLink href="/Experience" onClick={() => { setActive(content.NAVBAR_EXPERIENCE); setIsMenuOpen(false) }} className={hover_list_effect}>
+                        <div className={active === content.NAVBAR_EXPERIENCE ? "text-highlight text-gradient underline" : ""}>{content.NAVBAR_EXPERIENCE}</div>
                     </HoveredLink>
                     <HoveredLink href="/Project" onClick={() => { setActive(content.NAVBAR_PROJECT); setIsMenuOpen(false) }} className={hover_list_effect}>
                         <div className={active === content.NAVBAR_PROJECT ? "text-highlight text-gradient underline" : ""}>{content.NAVBAR_PROJECT}</div>
@@ -107,14 +108,14 @@ function Navbar({
             {isMenuOpen && (
                 <div className="absolute top-16 left-1/2 transform -translate-x-1/2 bg-white/70 dark:bg-black/70 z-50 items-center flex flex-col space-y-4 backdrop-blur-sm  text-black dark:text-white   px-8 py-4 rounded-3xl   md:hidden ">
                     <div className="flex flex-col space-y-6 text-center p-4">
-                        {/* <HoveredLink href="/" onClick={() => { setActive(content.NAVBAR_HOME); setIsMenuOpen(false) }} className={hover_list_effect}>
-                            <div className={active === content.NAVBAR_HOME ? "text-highlight text-gradient underline" : ""}>{content.NAVBAR_HOME}</div>
-                        </HoveredLink> */}
                         <HoveredLink href="/About" onClick={() => { setActive(content.NAVBAR_ABOUT); setIsMenuOpen(false) }} className={hover_list_effect}>
                             <div className={active === content.NAVBAR_ABOUT ? "text-highlight text-gradient underline" : ""}>{content.NAVBAR_ABOUT}</div>
                         </HoveredLink>
                         <HoveredLink href="/Education" onClick={() => { setActive(content.NAVBAR_EDUCATION); setIsMenuOpen(false) }} className={hover_list_effect}>
                             <div className={active === content.NAVBAR_EDUCATION ? "text-highlight text-gradient underline" : ""}>{content.NAVBAR_EDUCATION}</div>
+                        </HoveredLink>
+                        <HoveredLink href="/Experience" onClick={() => { setActive(content.NAVBAR_EXPERIENCE); setIsMenuOpen(false) }} className={hover_list_effect}>
+                            <div className={active === content.NAVBAR_EXPERIENCE ? "text-highlight text-gradient underline" : ""}>{content.NAVBAR_EXPERIENCE}</div>
                         </HoveredLink>
                         <HoveredLink href="/Project" onClick={() => { setActive(content.NAVBAR_PROJECT); setIsMenuOpen(false) }} className={hover_list_effect}>
                             <div className={active === content.NAVBAR_PROJECT ? "text-highlight text-gradient underline" : ""}>{content.NAVBAR_PROJECT}</div>
@@ -139,3 +140,5 @@ function Navbar({
         </div>
     );
 }
+
+

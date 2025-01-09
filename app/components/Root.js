@@ -2,15 +2,12 @@
 import localFont from "next/font/local";
 import React from 'react'
 import { NavbarDemo } from "./NavBar";
-import { Montserrat } from "next/font/google";
 import Footer from "./footer";
 import Cursor from "./Cursor";
 import Head from "next/head";
+import { FontStyle } from "../data/fontStyle";
 
-const jost = Montserrat({
-    subsets: ["latin"],
-    // weight: ["400", "700"],
-});
+
 function Root({ children }) {
     const [darkmode, setDarkmode] = React.useState(false);
     return (
@@ -19,9 +16,9 @@ function Root({ children }) {
                 <title>DevY_</title>
             </Head>
             <body
-                className={`antialiased ${jost.className} body`}
+                className={`antialiased ${FontStyle.montserrat} body`}
             >
-                <Cursor/>
+                <Cursor />
                 <NavbarDemo setDarkmode={setDarkmode} darkmode={darkmode} />
                 {children}
                 <Footer />

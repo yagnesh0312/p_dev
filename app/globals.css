@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dark_mode');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=light_mode');
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -122,12 +126,19 @@ body {
     @apply bg-background text-foreground;
   }
 }
-.body {
-  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' width='30' height='30' viewBox='0 0 48 48'%3E%3ClinearGradient id='-xB6bdvzZb3G2rEsTvbJua_rdIlDV5undju_gr1' x1='20.709' x2='39.685' y1='29.172' y2='53.749' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23225949'%3E%3C/stop%3E%3Cstop offset='1' stop-color='%23e0f2ff'%3E%3C/stop%3E%3C/linearGradient%3E%3Cpath fill='url(%23-xB6bdvzZb3G2rEsTvbJua_rdIlDV5undju_gr1)' d='M30.343,44.646l2.772-1.146l-4.202-10.32l-2.892,0.858l-2.604,1.554l3.008,7.429	C27.058,44.551,28.812,45.279,30.343,44.646z'/%3E%3ClinearGradient id='-xB6bdvzZb3G2rEsTvbJub_rdIlDV5undju_gr2' x1='-17.824' x2='60.544' y1='-2.917' y2='62.842' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23e0f2ff'%3E%3C/stop%3E%3Cstop offset='1' stop-color='%23225949'%3E%3C/stop%3E%3C/linearGradient%3E%3Cpath fill='url(%23-xB6bdvzZb3G2rEsTvbJub_rdIlDV5undju_gr2)' d='M11,3v40l15.021-8.963L43,29L17.5,5C14.56,2.355,11,3,11,3z'/%3E%3C/svg%3E")
-      5 5,
+body {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Ccircle cx='15' cy='15' r='10' fill='%2300d7a7'/%3E%3Canimate attributeName='r' values='5; 10; 5' dur='1.5s' repeatCount='indefinite'/%3E%3Ccircle cx='15' cy='15' r='5' fill='%23ffffff'/%3E%3C/svg%3E")
+      15 15,
     auto;
 }
 
+a,
+h3 {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Ccircle cx='15' cy='15' r='10' fill='%23006400'/%3E%3Canimate attributeName='r' values='10; 5; 10' dur='1.5s' repeatCount='indefinite'/%3E%3Ccircle cx='15' cy='15' r='5' fill='%23ffffff'/%3E%3C/svg%3E")
+      15 15,
+    auto;
+  text-shadow: 0 0 15px rgba(102, 255, 105, 0.282);
+}
 a:hover .cursor-root,
 button:hover .cursor-root {
   background-color: red;

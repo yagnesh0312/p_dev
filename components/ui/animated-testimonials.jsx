@@ -102,7 +102,7 @@ export const AnimatedTestimonials = ({
                             ease: "easeInOut",
                         }}>
                         <motion.h3
-                            className="text-4xl md:text-6xl gap-2 flex items-center flex-row font-light mb-4 dark:text-white text-black dark:hover:text-green-500 hover:text-green-600 cursor-pointer"
+                            className="text-4xl md:text-6xl gap-2 flex items-center flex-row font-light mb-4 dark:text-white text-black dark:hover:text-green-500 hover:text-green-600"
                             whileTap={{ scale: 0.80 }}
                             onClick={() => window.open(url, "_blank")}
                             initial={{ opacity: 0, y: 20 }}
