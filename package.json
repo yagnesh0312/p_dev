@@ -2,13 +2,14 @@
     "name": "portfolio",
     "version": "0.1.0",
     "private": true,
+    "homepage": "https://yagnesh0312.github.io/y_dev",
     "scripts": {
         "dev": "next dev",
         "start": "next start",
-        "export": "next export",
         "lint": "next lint",
-        "build": "next build && next export",
-        "deploy": "npm run build && gh-pages -d out"
+        "build": "next build",
+        "export": "next export",
+        "deploy": "next build && next export && gh-pages -d out"
     },
     "dependencies": {
         "@emailjs/browser": "^4.4.1",
