@@ -6,8 +6,8 @@ const nextConfig = {
     },
     output: 'export',
     reactStrictMode: true,
-    basePath: '/y_dev',
-  assetPrefix: '/y_dev/',
+//     basePath: '/y_dev',
+//   assetPrefix: '/y_dev/',
     // swcMinify: true,
 
 };
