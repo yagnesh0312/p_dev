@@ -136,16 +136,16 @@ export default class Content {
     static EXPERIENCE_DATA = [
        
         {
-            title: "DevOps Intern",
+            title: "Flutter developer Intern",
             company: "LeafDrive PVT. LTD.",
             place: "Surat, Gujarat, India",
-            duration: "January 2023 - May 2023",
+            duration: "March 2023 - May 2023",
           },
           {
-            title: "Junior DevOps Engineer",
-            company: "Inventivy Software Pvt. Ltd.",
+            title: "DevOps intern",
+            company: "Inventivy Software Service Pvt. Ltd.",
             place: "Ahmedabad, Gujarat, India",
-            duration: "June 2023 - Present",
+            duration: "January 2025 - Present",
           },
       
     ];

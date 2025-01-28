@@ -102,7 +102,7 @@ export const AnimatedTestimonials = ({
                             ease: "easeInOut",
                         }}>
                         <motion.h3
-                            className="text-4xl md:text-6xl gap-2 flex items-center flex-row font-light mb-4 dark:text-white text-black dark:hover:text-green-500 hover:text-green-600"
+                            className="text-4xl md:text-6xl gap-2 flex items-center flex-row font-light mb-4 dark:text-white text-black dark:hover:text-purple-500 hover:text-purple-600"
                             whileTap={{ scale: 0.80 }}
                             onClick={() => window.open(url, "_blank")}
                             initial={{ opacity: 0, y: 20 }}
@@ -112,7 +112,7 @@ export const AnimatedTestimonials = ({
                         >
                             {testimonials[active].name}
                             <svg className="w-4 h-4 md:w-10 md:h-10 ml-2" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 9L9 1M9 1H2.5M9 1V7.22222" stroke="green" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M1 9L9 1M9 1H2.5M9 1V7.22222" stroke="purple" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
                                 </path>
                             </svg> </motion.h3>
                         <p className="text-md text-gray-500 dark:text-neutral-500 mb-4 ">

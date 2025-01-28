@@ -29,7 +29,7 @@ function Contact() {
         <div className="main-body head py-40 pt-[150px] md:pt-40 px-6 md:px-16">
             <Spotlight
                 className="-top-40 left-0 md:left-60 md:-top-20"
-                fill="#c6ffc6"
+                fill="#9b5de5"
             />
             <div className=''>
 
@@ -72,7 +72,7 @@ function Contact() {
                         <div className="input-item">
                             <button
                                 type="submit"
-                                className="button bg-gradient-to-r from-green-400 to-green-700 dark:from-green-700 dark:to-green-400 text-white px-8 py-3  shadow-lg transform hover:scale-110 hover:shadow-xl transition-all duration-300 ease-in-out"
+                                className="button bg-gradient-to-r from-[#ff6ec7] to-[#9b5de5] rounded-md text-white px-8 py-3  shadow-lg transform hover:scale-110 hover:shadow-xl transition-all duration-300 ease-in-out"
                             >
                                 {Content.FORM_BUTTON_TEXT}
                             </button>
@@ -87,7 +87,8 @@ function Contact() {
                         }
                     >
 
-                        <div className="shadow-[0_0px_60px_10px_#34C759] mb-5 h-0"></div>
+                                     <div className="light-box dark:shadow-[0_0px_60px_10px_#9b5de5] mb-5 h-0"></div>
+
 
                         <div className="connect-item-center">
                             <div className="card-title connect-title text-3xl ">
@@ -106,7 +107,8 @@ function Contact() {
                         }
                     >
 
-                        <div className="shadow-[0_0px_60px_10px_#34C759] mb-5 h-0"></div>
+                                     <div className="light-box dark:shadow-[0_0px_60px_10px_#9b5de5] mb-5 h-0"></div>
+
 
                         <div className="connect-item-center">
                             <div className="card-title connect-title text-3xl ">
