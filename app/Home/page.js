@@ -45,11 +45,12 @@ function HomePage() {
 
             <Spotlight
                 className="-top-40 left-0 md:left-60 md:-top-20"
-                fill="#c6ffc6"
+                fill="#9b5de5"
+
             />
             <BackgroundBeams />
             <div className="absolute pointer-events-none inset-0 w-full h-full items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,white)]"></div>
-            <div className="relative z-10  flex flex-col items-center justify-center lg:mx-40 md:mx-20 mx-10 h-full" style={{
+            <div className="relative z-10  flex flex-col items-center justify-center lg:mx-40 md:mx-20 mx-0 h-full" style={{
                 display: 'flex', alignItems: 'center'
             }}>
                 <h1
@@ -61,11 +62,11 @@ function HomePage() {
                     <TypewriterEffectSmooth words={[
                         {
                             text: content.OWNER_NAME.split(" ")[0],
-                            className: " text-gradient-shadow " +FontStyle.jetbrains + " border border-2 rounded-3xl mr-2 border-green-900  dark:border-green-300 bg-white dark:bg-black font-medium  md:text-7xl   text-2xl md:text-7xl "
+                            className: " text-gradient-shadow " +FontStyle.jetbrains + " border md:border-2 md:rounded-3xl rounded-md mr-1 md:mr-2 border-purple-900  dark:border-purple-100 bg-white dark:bg-black font-medium  md:text-7xl   text-2xl md:text-7xl "
                         },
                         {
-                            text: content.OWNER_NAME.split(" ")[1] + " ",
-                            className: "font-medium " +FontStyle.jetbrains + " border border-2 rounded-3xl mr-2 border-green-900  dark:border-green-300 bg-white dark:bg-black text-gradient-shadow md:text-7xl text-2xl md:text-7xl "
+                            text: content.OWNER_NAME.split(" ")[1] + "",
+                            className: "font-medium " +FontStyle.jetbrains + " border md:border-2 md:rounded-3xl   rounded-md mr-1 md:mr-2 border-purple-900  dark:border-purple-100 bg-white dark:bg-black text-gradient-shadow md:text-7xl text-2xl md:text-7xl "
                         },
                         {
                             text: "Here...",
@@ -80,12 +81,12 @@ function HomePage() {
                     rel="noopener noreferrer"
                 >
                     <div
-                        className="flex flex-row items-center justify-center px-6 py-3 mt-6 rounded-full border-2 border-green-500 hover:shadow-green-900 hover:shadow-2xl hover:scale-110 transition duration-300 ease-in-out"
+                        className="flex flex-row items-center justify-center px-6 py-3 mt-6 rounded-full border-2 border-purple-500 hover:shadow-purple-500 hover:shadow-2xl hover:scale-110 transition duration-300 ease-in-out"
                     >
-                        <div className="text-base font-medium text-green-500 dark:text-green-300">
+                        <div className="text-base font-medium text-purple-500 dark:text-gray-300">
                             Download
                         </div>
-                        <span className="font-bold text-green-500 text-lg dark:text-green-300 ml-3">
+                        <span className="font-bold text-purple-500 text-lg dark:text-purple-300 ml-3">
                             CV
                         </span>
                     </div>
@@ -123,3 +124,4 @@ function HomePage() {
 }
 
 export default HomePage;
+

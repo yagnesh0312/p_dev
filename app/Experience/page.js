@@ -11,7 +11,7 @@ function Experience() {
                 <p className={MyCSS.subHeading}>
                     {Content.EXPERIENCE_SUBTITLE}
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-1 gap-4 mt-20 mx-40">
+                <div className="grid grid-cols-1 md:grid-cols-1 gap-4 mt-20 md:mx-40 mx-4 ">
 
                     {Content.EXPERIENCE_DATA.reverse().map((experience, index) => (
                         <div key={index}>
